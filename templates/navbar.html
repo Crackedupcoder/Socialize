@@ -1,13 +1,10 @@
-{% load static %}
-{% block content %}
-
 <header>
     <div class="header_inner">
         <div class="left-side">
             <!-- Logo -->
             <div id="logo" class=" uk-hidden@s">
-                <a href="home.html">
-                    <b><h1 style="text-transform: uppercase;">Grits </h1></b>
+                <a href="{% url 'home' %}">
+                    <b><h1 style="text-transform: uppercase;">Socialize </h1></b>
                 </a>
             </div>
 
@@ -47,7 +44,7 @@
                 <ul class="dropdown_scrollbar" data-simplebar>
                     <li>
                         <a href="#">
-                            <div class="drop_avatar"> <img src="{% static 'assets/images/avatars/avatar-1.jpg' %}" alt="">
+                            <div class="drop_avatar"> <img src="" alt="">
                             </div>
                             <div class="drop_content">
                                 <p> <strong class="text-link" >Taiye</strong>  
@@ -75,7 +72,7 @@
                 <ul class="dropdown_scrollbar" data-simplebar>
                     <li>
                         <a href="#">
-                            <div class="drop_avatar"> <img src="{% static 'assets/images/avatars/avatar-1.jpg' %}" alt="">
+                            <div class="drop_avatar"> <img src="" alt="">
                             </div>
                             <div class="drop_content">
                                 <strong> Taiye </strong> <time> 6:43 PM</time>
@@ -108,5 +105,3 @@
         </div>
     </div>
 </header>
-
-{% endblock content %}
