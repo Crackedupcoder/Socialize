@@ -46,12 +46,10 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig',
     'users.apps.UsersConfig',
     'storages',
-    'allauth',
-    'allauth.account',
+
 ]
 
 MIDDLEWARE = [
-    'allauth.account.middleware.AccountMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
