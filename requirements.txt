@@ -8,3 +8,10 @@ psycopg2-binary
 sqlparse
 tzdata
 whitenoise
+botocore
+django-environ
+django-storages
+jmespath
+python-dateutil
+six
+urllib3
