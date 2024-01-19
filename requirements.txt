@@ -15,3 +15,5 @@ jmespath
 python-dateutil
 six
 urllib3
+boto3
+s3transfer
