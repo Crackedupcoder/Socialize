@@ -278,9 +278,10 @@ const unlikeIconPath = '<path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM
         // toggle button text and data-action
         var action = previousAction === 'like' ? 'unlike' : 'like';
         likeButton.dataset.action = action;
+        
         // Update inner HTML with the corresponding SVG path
-var svgIcon = likeButton.querySelector('svg');
-svgIcon.innerHTML = action === 'like' ? likeIconPath : unlikeIconPath;
+        var svgIcon = likeButton.querySelector('svg');
+        svgIcon.innerHTML = action === 'like' ? likeIconPath : unlikeIconPath;
         
         // update like count
         var likeCount = document.querySelector('span.count .total');
